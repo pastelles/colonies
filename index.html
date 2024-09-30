@@ -25,12 +25,12 @@
     }
     #canvas-container {
       aspect-ratio: 4 / 5;
-      width: 100%;
+      width: 80%;
       max-width: 80vh;
-      max-height: 50vh;
+      max-height: 80vh;
     }
     #info-box {
-      width: 100%;
+      width: 80%;
       background-color: #ffffff;
       padding: 20px;
       box-sizing: border-box;
@@ -101,11 +101,27 @@
       background-color: #45a049;
     }
 
+    @media (max-width: 767px) {
+      #info-box {
+        display: flex;
+        flex-direction: column;
+      }
+      #download-button {
+        order: 1;
+      }
+      #hash-box {
+        order: 2;
+      }
+      #features-container {
+        order: 3;
+      }
+    }
+
     @media (min-width: 768px) {
       .container {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
       }
       #canvas-container {
         width: 80%;
@@ -123,8 +139,10 @@
   <div class="container">
     <div id="canvas-container"></div>
     <div id="info-box">
-      <h2>Traits</h2>
-      <ul id="features-list"></ul>
+      <div id="features-container">
+        <h2>Traits</h2>
+        <ul id="features-list"></ul>
+      </div>
       <div id="hash-box">
         <strong>Hash:</strong>
         <span id="hash-value"></span>
