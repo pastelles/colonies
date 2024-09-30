@@ -5,7 +5,7 @@ let colorPalettes = [
   { name: "Neon", colors: ['#FF00FF', '#00FFFF', '#FF00AA', '#AA00FF', '#00FF00'] },
   { name: "Dirt", colors: ['#5D4037', '#795548', '#A1887F', '#BCAAA4', '#D7CCC8'] },
   { name: "Autumn", colors: ['#8B4513', '#CD853F', '#DEB887', '#D2691E', '#FFDAB9'] },
-  { name: "Retro Pop", colors: ['#FF69B4', '#FF6347', '#FFD700', '#00CED1', '#9370DB'] },
+  { name: "Retro", colors: ['#FF69B4', '#FF6347', '#FFD700', '#00CED1', '#9370DB'] },
   { name: "Muted", colors: ['#2F4F4F', '#708090', '#778899', '#B0C4DE', '#F0F8FF'] },
   { name: "Tropical ", colors: ['#00A86B', '#FDBE02', '#FF4F58', '#0089A7', '#F7EF81'] },
   { name: "Metro", colors: ['#2C3E50', '#E74C3C', '#ECF0F1'] },
