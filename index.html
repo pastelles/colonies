@@ -17,25 +17,25 @@
     }
     .container {
       display: flex;
+      flex-direction: column;
       width: 100%;
       height: 100%;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
     }
     #canvas-container {
       aspect-ratio: 4 / 5;
-      width: 80%;
+      width: 100%;
       max-width: 80vh;
-      max-height: 100vh;
+      max-height: 50vh;
     }
     #info-box {
-      width: 20%;
-      height: 100%;
+      width: 100%;
       background-color: #ffffff;
       padding: 20px;
       box-sizing: border-box;
       overflow-y: auto;
-      box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
     }
@@ -100,6 +100,23 @@
     #download-button:hover {
       background-color: #45a049;
     }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      #canvas-container {
+        width: 80%;
+        max-height: 100vh;
+      }
+      #info-box {
+        width: 20%;
+        height: 100%;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+      }
+    }
   </style>
 </head>
 <body>
@@ -117,7 +134,7 @@
   </div>
   <script src="sketch.js"></script>
   <script>
-    function updateFeatures(traits) {
+    window.updateFeatures = function(traits) {
       const featuresList = document.getElementById('features-list');
       featuresList.innerHTML = '';
       for (const [key, value] of Object.entries(traits)) {
@@ -127,7 +144,7 @@
       }
     }
 
-    function updateHash(hash) {
+    window.updateHash = function(hash) {
       document.getElementById('hash-value').textContent = hash;
     }
 
