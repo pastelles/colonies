@@ -39,9 +39,9 @@ function setup() {
   let size = min(container.width, container.height * 0.8);
   canvas = createCanvas(size, size * 5/4);
   canvas.parent(container);
-  pixelDensity(5);
-  amplitudeRatio = hl.randomElement([0.002, 0.005, 0.01, 0.1, 0.5, 1]);
-  frequencyRatio = hl.randomElement([100, 150, 200, 300, 500]);
+  pixelDensity(7);
+amplitudeRatio = hl.randomElement([0.002, 0.005, 0.01, 0.1, 0.5, 1]);
+frequencyRatio = hl.randomElement([100, 150, 200, 300, 500]);
 
   selectedPalette = hl.randomElement(colorPalettes);
   selectedBackground = hl.randomElement(bgColors);
@@ -98,6 +98,7 @@ function drawAnimatedArtwork() {
 }
 
 function prepareGlitchElements() {
+  //glitches = 1000;
   glitches = hl.randomElement([50, 150, 200, 400]);
   for (let i = 0; i < glitches; i++) {
     glitchElements.push({
@@ -146,7 +147,7 @@ function addFinalNoise() {
 }
 
 function windowResized() {
-  pixelDensity(5);
+  pixelDensity(7);
   let container = select('#canvas-container');
   let size = min(container.width, container.height * 0.8);
   resizeCanvas(size, size * 5/4);
@@ -162,19 +163,25 @@ function setTraits() {
     Background: selectedBackground.name,
     Amplitude: amplitudeRatio <= 0.01 ? "Controlled" :
                amplitudeRatio <= 0.5 ? "Messy" : "Splatter",
-    Glitch: glitches === 50 ? "Sparse" :
+    Frequency: frequencyRatio <= 100 ? "Low" :
+                frequencyRatio <= 150 ? "Normal" :
+                frequencyRatio <= 200 ? "High" : "Busy",
+      Glitch: glitches === 50 ? "Sparse" :
             glitches === 150 ? "Normal" :
             glitches === 200 ? "Dense" : "Crowded",
-    Frequency: frequencyRatio <= 100 ? "Low" :
-               frequencyRatio <= 200 ? "Medium" : "High",
   };
 
   hl.token.setTraits(traits);
       
   hl.token.setName(`Colonies #${hl.tx.tokenId}`);
   hl.token.setDescription(
-    `Colonies #${hl.tx.tokenId} Minted by ${hl.tx.walletAddress}. Pastelle, 2024`
+    `Colonies by Pastelle
+    Minted by ${hl.tx.walletAddress}.`
   );
+
+  // Add these lines to update the features box and hash
+  updateFeatures(traits);
+  updateHash(hl.tx.hash);
 }
 
 function capturePreview() {
