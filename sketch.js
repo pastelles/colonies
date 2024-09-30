@@ -1,60 +1,20 @@
-/*let colorPalettes = [
-  { name: "Sunset Horizon", colors: ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FDCB6E', '#6C5CE7'] },
-  { name: "Forest Whisper", colors: ['#2D3E4E', '#537A5A', '#9ECE9A', '#DAD7CD', '#4A5859'] },
-  { name: "Urban Rhythm", colors: ['#2B2D42', '#8D99AE', '#EDF2F4', '#EF233C', '#D90429'] },
-  { name: "Pastel Dream", colors: ['#FFD3B6', '#FFAAA5', '#FF8B94', '#DCEDC1', '#A8E6CF'] },
-  { name: "Neon Nights", colors: ['#3E1F47', '#5C2A9D', '#8D5FD3', '#14F195', '#00E3CC'] },
-  { name: "Autumn Breeze", colors: ['#D8B384', '#E7DFC6', '#9C7C38', '#6E4C1E', '#3A3238'] },
-  { name: "Ocean Depths", colors: ['#05445E', '#189AB4', '#75E6DA', '#D4F1F4', '#0A1931'] },
-  { name: "Electric Pop", colors: ['#F72585', '#7209B7', '#3A0CA3', '#4361EE', '#4CC9F0'] },
-  { name: "Earthy Tones", colors: ['#606C38', '#283618', '#DDA15E', '#BC6C25', '#FEFAE0'] },
-  // New vibrant palettes
-  { name: "Tropical Punch", colors: ['#FF1493', '#FF4500', '#FFD700', '#00FF00', '#00FFFF'] },
-  { name: "Candy Explosion", colors: ['#FF00FF', '#00FFFF', '#FF1493', '#FFFF00', '#FF69B4'] },
-  { name: "Neon Carnival", colors: ['#39FF14', '#FF3131', '#FF00FF', '#00FFFF', '#FFFF00'] },
-  { name: "Vibrant Sunset", colors: ['#FF4E50', '#FC913A', '#F9D62E', '#8DE969', '#00FFFF'] },
-  { name: "Rainbow Burst", colors: ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF'] },
-
-]; */
-/*let colorPalettes = [
-  { name: "Vibrant Rainbow", colors: ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF'] },
-  { name: "Pastel Serenity", colors: ['#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF'] },
-  { name: "Monochrome Elegance", colors: ['#000000', '#333333', '#666666', '#999999', '#FFFFFF'] },
-  { name: "Neon Nights", colors: ['#FF00FF', '#00FFFF', '#FF00AA', '#AA00FF', '#00FF00'] },
-  { name: "Earthy Tones", colors: ['#5D4037', '#795548', '#A1887F', '#BCAAA4', '#D7CCC8'] },
-  { name: "Ocean Depths", colors: ['#000080', '#0000FF', '#1E90FF', '#00FFFF', '#E0FFFF'] },
-  { name: "Autumn Harvest", colors: ['#8B4513', '#CD853F', '#DEB887', '#D2691E', '#FFDAB9'] },
-  { name: "Retro Pop", colors: ['#FF69B4', '#FF6347', '#FFD700', '#00CED1', '#9370DB'] },
-  { name: "Muted Sophistication", colors: ['#2F4F4F', '#708090', '#778899', '#B0C4DE', '#F0F8FF'] },
-  { name: "Tropical Paradise", colors: ['#00A86B', '#FDBE02', '#FF4F58', '#0089A7', '#F7EF81'] }
-];*/
 let colorPalettes = [
   { name: "Vibrance", colors: ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF'] },
   { name: "Pastel", colors: ['#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF'] },
   { name: "Mono", colors: ['#000000', '#333333', '#666666', '#999999', '#FFFFFF'] },
   { name: "Neon", colors: ['#FF00FF', '#00FFFF', '#FF00AA', '#AA00FF', '#00FF00'] },
   { name: "Dirt", colors: ['#5D4037', '#795548', '#A1887F', '#BCAAA4', '#D7CCC8'] },
-  { name: "Ocean", colors: ['#000080', '#0000FF', '#1E90FF', '#00FFFF', '#E0FFFF'] },
-  { name: "Autumn Harvest", colors: ['#8B4513', '#CD853F', '#DEB887', '#D2691E', '#FFDAB9'] },
+  { name: "Autumn", colors: ['#8B4513', '#CD853F', '#DEB887', '#D2691E', '#FFDAB9'] },
   { name: "Retro Pop", colors: ['#FF69B4', '#FF6347', '#FFD700', '#00CED1', '#9370DB'] },
-  { name: "Muted Sophistication", colors: ['#2F4F4F', '#708090', '#778899', '#B0C4DE', '#F0F8FF'] },
+  { name: "Muted", colors: ['#2F4F4F', '#708090', '#778899', '#B0C4DE', '#F0F8FF'] },
   { name: "Tropical ", colors: ['#00A86B', '#FDBE02', '#FF4F58', '#0089A7', '#F7EF81'] },
-  { name: "Urban", colors: ['#2C3E50', '#E74C3C', '#ECF0F1'] },
-];
-
-/*let bgColors = [
-  //{name: 'Ivory', bg: ['#FFFFF0']},
-  //{name: 'Light Gray', bg: ['#D3D3D3']},
-  //{name: 'Charcoal', bg: ['#36454F']},
-  //{name: 'Beige', bg: ['#F5F5DC']},
-  //{name: 'Navy', bg: ['#000080']},
-  //{name: 'Sage', bg: ['#87AE73']},
-  {name: 'Pale Pink', bg: ['#FADADD']},
-  {name: 'Pale Blue', bg: ['#E4F6F8']},
-  {name: 'Cream', bg: ['#FEFBEA']},
-  {name: 'Black', bg: ['#000000']},
-  {name: 'White', bg: ['#FFFFFF']},
-];*/
+  { name: "Metro", colors: ['#2C3E50', '#E74C3C', '#ECF0F1'] },
+  {name: 'Youth', colors: ['#045f9f','#dd1812','#ecd559','#433c41']},
+  {name: 'Drab', colors: ['#6598B0','#4F745F','#C8BF96']},
+  {name: 'Sunrise', colors: ['#FFEB3B', '#FDD835', '#FBC02D', '#F9A825', '#F57F17', '#F57C00', '#F4511E', '#E64A19']},
+  {name: 'Home', colors: ['#14279B', '#3D56B2', '#5C7AEA', '#E6E6E6', '#476072', '#5C6E91', '#1089FF', '#BBCFFF']},
+  {name: 'Grass', colors: ['#DCE775', '#D4E157', '#CDDC39', '#C5D627', '#AFB42B', '#9E9D24', '#827717', '#5A4C00']},
+  ];
 let bgColors = [
   {name: 'Pale Pink', bg: ['#FADADD']},
   {name: 'Cream', bg: ['#FEFBEA']},
@@ -80,8 +40,7 @@ function setup() {
   canvas = createCanvas(size, size * 5/4);
   canvas.parent(container);
   pixelDensity(5);
-//  amplitudeRatio = 1; // controlled, controlled, controlled, messy, splatter, splatter
-  amplitudeRatio = hl.randomElement([0.002, 0.005, 0.01, 0.1, 0.5, 1]); // controlled, controlled, controlled, messy, splatter, splatter
+  amplitudeRatio = hl.randomElement([0.002, 0.005, 0.01, 0.1, 0.5, 1]);
   frequencyRatio = hl.randomElement([100, 150, 200, 300, 500]);
 
   selectedPalette = hl.randomElement(colorPalettes);
@@ -139,7 +98,6 @@ function drawAnimatedArtwork() {
 }
 
 function prepareGlitchElements() {
-  //glitches = 1000;
   glitches = hl.randomElement([50, 150, 200, 400]);
   for (let i = 0; i < glitches; i++) {
     glitchElements.push({
@@ -204,23 +162,19 @@ function setTraits() {
     Background: selectedBackground.name,
     Amplitude: amplitudeRatio <= 0.01 ? "Controlled" :
                amplitudeRatio <= 0.5 ? "Messy" : "Splatter",
-    Frequency: frequencyRatio,
     Glitch: glitches === 50 ? "Sparse" :
             glitches === 150 ? "Normal" :
             glitches === 200 ? "Dense" : "Crowded",
+    Frequency: frequencyRatio <= 100 ? "Low" :
+               frequencyRatio <= 200 ? "Medium" : "High",
   };
 
   hl.token.setTraits(traits);
       
   hl.token.setName(`Colonies #${hl.tx.tokenId}`);
   hl.token.setDescription(
-    `Colonies by Pastelle
-    Minted by ${hl.tx.walletAddress}.`
+    `Colonies #${hl.tx.tokenId} Minted by ${hl.tx.walletAddress}. Pastelle, 2024`
   );
-
-  // Add these lines to update the features box and hash
-  updateFeatures(traits);
-  updateHash(hl.tx.hash);
 }
 
 function capturePreview() {
